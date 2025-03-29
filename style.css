@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .name-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .letter {
+    margin: 5px;
+    font-weight: bold;
+    position: relative;
+    animation: bounce 1s ease-in-out infinite alternate;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Space between name sections */
+  .space {
+    width: 30px; /* Adjust the spacing here */
+  }
+  
+  /* Unique styles for each letter */
+  #C { color: #FF5733; background: linear-gradient(45deg, #FF5733, #FFC300); padding: 10px 20px; border-radius: 10px; }
+  #A { color: #2980B9; background: linear-gradient(45deg, #2980B9, #8E44AD); padding: 10px 20px; border-radius: 10px; }
+  #R { color: #2ECC71; background: linear-gradient(45deg, #2ECC71, #F39C12); padding: 10px 20px; border-radius: 10px; }
+  #L { color: #F1C40F; background: linear-gradient(45deg, #F1C40F, #E67E22); padding: 10px 20px; border-radius: 10px; }
+  
+  #A2 { color: #9B59B6; background: linear-gradient(45deg, #9B59B6, #34495E); padding: 10px 20px; border-radius: 10px; }
+  #N { color: #E74C3C; background: linear-gradient(45deg, #E74C3C, #F39C12); padding: 10px 20px; border-radius: 10px; }
+  #G { color: #1ABC9C; background: linear-gradient(45deg, #1ABC9C, #16A085); padding: 10px 20px; border-radius: 10px; }
+  #E { color: #F39C12; background: linear-gradient(45deg, #F39C12, #F1C40F); padding: 10px 20px; border-radius: 10px; }
+  #L2 { color: #8E44AD; background: linear-gradient(45deg, #8E44AD, #9B59B6); padding: 10px 20px; border-radius: 10px; }
+  #O { color: #2C3E50; background: linear-gradient(45deg, #2C3E50, #16A085); padding: 10px 20px; border-radius: 10px; }
+  
+  #D { color: #C0392B; background: linear-gradient(45deg, #C0392B, #8E44AD); padding: 10px 20px; border-radius: 10px; }
+  #E2 { color: #F39C12; background: linear-gradient(45deg, #F39C12, #FF5733); padding: 10px 20px; border-radius: 10px; }
+  #L3 { color: #1ABC9C; background: linear-gradient(45deg, #1ABC9C, #2ECC71); padding: 10px 20px; border-radius: 10px; }
+  #A3 { color: #F1C40F; background: linear-gradient(45deg, #F1C40F, #F39C12); padding: 10px 20px; border-radius: 10px; }
+  
+  #C2 { color: #FF5733; background: linear-gradient(45deg, #FF5733, #FFC300); padding: 10px 20px; border-radius: 10px; }
+  #R2 { color: #2ECC71; background: linear-gradient(45deg, #2ECC71, #16A085); padding: 10px 20px; border-radius: 10px; }
+  #U { color: #2980B9; background: linear-gradient(45deg, #2980B9, #8E44AD); padding: 10px 20px; border-radius: 10px; }
+  #Z { color: #8E44AD; background: linear-gradient(45deg, #8E44AD, #9B59B6); padding: 10px 20px; border-radius: 10px; }
+  
+  /* Animations */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Hover effect for each letter */
+  .letter:hover {
+    transform: scale(1.2);
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+    color: #FFF;
+  }
